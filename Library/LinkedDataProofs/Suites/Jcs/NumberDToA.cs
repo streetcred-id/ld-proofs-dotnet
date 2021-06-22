@@ -23,7 +23,6 @@
 
 using System;
 using System.Numerics;
-using System.Diagnostics;
 using System.Text;
 
 /// <summary>
@@ -653,7 +652,8 @@ namespace Org.Webpki.Es6NumberSerialization
                                     buf.Append((char)(lastCh + 1));
                                     return k + 1;
                                 }
-                                else if (d < 0.5 - eps)
+
+                                if (d < 0.5 - eps)
                                 {
                                     StripTrailingZeroes(buf);
                                     //                                    while(*--s == '0') ;

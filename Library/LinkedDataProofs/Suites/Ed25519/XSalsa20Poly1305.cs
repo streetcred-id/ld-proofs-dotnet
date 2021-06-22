@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Chaos.NaCl.Internal;
 using Chaos.NaCl.Internal.Salsa;
 
@@ -63,8 +62,7 @@ namespace Chaos.NaCl
             bool success = DecryptInternal(plaintext, 0, ciphertext, 0, ciphertext.Length, key, 0, nonce, 0);
             if (success)
                 return plaintext;
-            else
-                return null;
+            return null;
         }
 
         /// <summary>

@@ -1,10 +1,8 @@
 ﻿using System;
 using BbsSignatures;
 using Multiformats.Base;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using W3C.CCG.DidCore;
-using LinkedDataProofs;
 
 namespace LinkedDataProofs.Bbs
 {

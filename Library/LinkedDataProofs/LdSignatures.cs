@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using VDS.RDF.JsonLd;
 using LinkedDataProofs.Purposes;
 using W3C.CCG.SecurityVocabulary;
-using System.Diagnostics.CodeAnalysis;
 using W3C.CCG.DidCore;
 using System.Linq;
 

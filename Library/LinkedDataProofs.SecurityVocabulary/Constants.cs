@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace W3C.CCG.SecurityVocabulary
+﻿namespace W3C.CCG.SecurityVocabulary
 {
     public class Constants
     {

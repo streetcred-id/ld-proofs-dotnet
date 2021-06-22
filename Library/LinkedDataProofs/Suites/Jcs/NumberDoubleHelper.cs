@@ -88,10 +88,8 @@ namespace Org.Webpki.Es6NumberSerialization
             {
                 return significand + kHiddenBit;
             }
-            else
-            {
-                return significand;
-            }
+
+            return significand;
         }
 
         // Returns true if the double is a denormal.

@@ -293,14 +293,16 @@ namespace Org.Webpki.JsonCanonicalizer
             {
                 return JsonToNumber.Convert(token);
             }
-            else if (BOOLEAN_PATTERN.IsMatch(token))
+
+            if (BOOLEAN_PATTERN.IsMatch(token))
             {
                 return Boolean.Parse(token);
             }
-            else if (token.Equals("null"))
+            if (token.Equals("null"))
             {
                 return null;
             }
+
             throw new IOException("Unrecognized or malformed JSON token: " + token);
         }
 

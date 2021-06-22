@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom.Compiler;
 using System.Security.Cryptography;
 
 namespace Chaos.NaCl

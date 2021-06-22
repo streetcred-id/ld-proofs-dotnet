@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -108,7 +106,6 @@ namespace W3C.CCG.DidCore
                     };
                 }
             }
-            yield break;
         }
 
         #endregion

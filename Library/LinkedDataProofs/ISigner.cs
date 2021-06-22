@@ -1,9 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
-using W3C.CCG.DidCore;
-
-namespace LinkedDataProofs
+﻿namespace LinkedDataProofs
 {
     public interface ISigner
     {

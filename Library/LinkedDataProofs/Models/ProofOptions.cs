@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 using VDS.RDF.JsonLd;
-using W3C.CCG.DidCore;
 using LinkedDataProofs.Purposes;
 using W3C.CCG.SecurityVocabulary;
 
@@ -36,7 +34,7 @@ namespace LinkedDataProofs
                 CompactToRelative = false,
                 DocumentLoader = DocumentLoader == null
                     ? CachingDocumentLoader.Default.Load
-                    : (Func<Uri, JsonLdLoaderOptions, RemoteDocument>)DocumentLoader.Load
+                    : DocumentLoader.Load
             };
         }
     }

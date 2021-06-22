@@ -200,46 +200,46 @@ namespace Chaos.NaCl.Internal.Ed25519Ref10
 			  i.e. |h1| <= 1.7*2^59; narrower ranges for h3, h5, h7, h9
 			*/
 
-			carry0 = (h0 + (Int64)(1 << 25)) >> 26; h1 += carry0; h0 -= carry0 << 26;
-			carry4 = (h4 + (Int64)(1 << 25)) >> 26; h5 += carry4; h4 -= carry4 << 26;
+			carry0 = (h0 + (1 << 25)) >> 26; h1 += carry0; h0 -= carry0 << 26;
+			carry4 = (h4 + (1 << 25)) >> 26; h5 += carry4; h4 -= carry4 << 26;
 			/* |h0| <= 2^25 */
 			/* |h4| <= 2^25 */
 			/* |h1| <= 1.71*2^59 */
 			/* |h5| <= 1.71*2^59 */
 
-			carry1 = (h1 + (Int64)(1 << 24)) >> 25; h2 += carry1; h1 -= carry1 << 25;
-			carry5 = (h5 + (Int64)(1 << 24)) >> 25; h6 += carry5; h5 -= carry5 << 25;
+			carry1 = (h1 + (1 << 24)) >> 25; h2 += carry1; h1 -= carry1 << 25;
+			carry5 = (h5 + (1 << 24)) >> 25; h6 += carry5; h5 -= carry5 << 25;
 			/* |h1| <= 2^24; from now on fits into int32 */
 			/* |h5| <= 2^24; from now on fits into int32 */
 			/* |h2| <= 1.41*2^60 */
 			/* |h6| <= 1.41*2^60 */
 
-			carry2 = (h2 + (Int64)(1 << 25)) >> 26; h3 += carry2; h2 -= carry2 << 26;
-			carry6 = (h6 + (Int64)(1 << 25)) >> 26; h7 += carry6; h6 -= carry6 << 26;
+			carry2 = (h2 + (1 << 25)) >> 26; h3 += carry2; h2 -= carry2 << 26;
+			carry6 = (h6 + (1 << 25)) >> 26; h7 += carry6; h6 -= carry6 << 26;
 			/* |h2| <= 2^25; from now on fits into int32 unchanged */
 			/* |h6| <= 2^25; from now on fits into int32 unchanged */
 			/* |h3| <= 1.71*2^59 */
 			/* |h7| <= 1.71*2^59 */
 
-			carry3 = (h3 + (Int64)(1 << 24)) >> 25; h4 += carry3; h3 -= carry3 << 25;
-			carry7 = (h7 + (Int64)(1 << 24)) >> 25; h8 += carry7; h7 -= carry7 << 25;
+			carry3 = (h3 + (1 << 24)) >> 25; h4 += carry3; h3 -= carry3 << 25;
+			carry7 = (h7 + (1 << 24)) >> 25; h8 += carry7; h7 -= carry7 << 25;
 			/* |h3| <= 2^24; from now on fits into int32 unchanged */
 			/* |h7| <= 2^24; from now on fits into int32 unchanged */
 			/* |h4| <= 1.72*2^34 */
 			/* |h8| <= 1.41*2^60 */
 
-			carry4 = (h4 + (Int64)(1 << 25)) >> 26; h5 += carry4; h4 -= carry4 << 26;
-			carry8 = (h8 + (Int64)(1 << 25)) >> 26; h9 += carry8; h8 -= carry8 << 26;
+			carry4 = (h4 + (1 << 25)) >> 26; h5 += carry4; h4 -= carry4 << 26;
+			carry8 = (h8 + (1 << 25)) >> 26; h9 += carry8; h8 -= carry8 << 26;
 			/* |h4| <= 2^25; from now on fits into int32 unchanged */
 			/* |h8| <= 2^25; from now on fits into int32 unchanged */
 			/* |h5| <= 1.01*2^24 */
 			/* |h9| <= 1.71*2^59 */
 
-			carry9 = (h9 + (Int64)(1 << 24)) >> 25; h0 += carry9 * 19; h9 -= carry9 << 25;
+			carry9 = (h9 + (1 << 24)) >> 25; h0 += carry9 * 19; h9 -= carry9 << 25;
 			/* |h9| <= 2^24; from now on fits into int32 unchanged */
 			/* |h0| <= 1.1*2^39 */
 
-			carry0 = (h0 + (Int64)(1 << 25)) >> 26; h1 += carry0; h0 -= carry0 << 26;
+			carry0 = (h0 + (1 << 25)) >> 26; h1 += carry0; h0 -= carry0 << 26;
 			/* |h0| <= 2^25; from now on fits into int32 unchanged */
 			/* |h1| <= 1.01*2^24 */
 

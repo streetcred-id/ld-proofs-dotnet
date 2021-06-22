@@ -50,13 +50,6 @@ namespace W3C.CCG.AuthorizationCapabilities
                 throw new Exception("Delegator not found for capability.");
             }
 
-            // if there's an invoker present and not a delegator, then this capability
-            // was intentionally meant to not be delegated
-            if (capability.Invoker != null && capability.Delegator is null)
-            {
-                return Array.Empty<string>();
-            }
-
             return new[] { capability.Delegator ?? capability.Id };
         }
 
@@ -90,13 +83,6 @@ namespace W3C.CCG.AuthorizationCapabilities
             if (capability.Invoker is null || capability.Id is null)
             {
                 throw new Exception("Delegator not found for capability.");
-            }
-
-            // if there's a delegator present and not an invoker, then this capability
-            // was intentionally meant to not be invoked
-            if (capability.Delegator != null && capability.Invoker is null)
-            {
-                return Array.Empty<string>();
             }
 
             return new[] { capability.Invoker ?? capability.Id };
@@ -248,7 +234,7 @@ namespace W3C.CCG.AuthorizationCapabilities
             var rootCapability = isRoot ? capability : capabilityChain.First();
             capabilityChain = capabilityChain.Skip(1).ToArray();
 
-            rootCapability = await Utils.FetchInSecurityContextAsync(rootCapability, isRoot, null);
+            rootCapability = await Utils.FetchInSecurityContextAsync(rootCapability, isRoot);
 
             // 4.1. Check the expected target, if one was specified.
             if (purposeOptions.ExpectedTarget != null)

@@ -111,7 +111,7 @@ namespace Chaos.NaCl.Internal.Ed25519Ref10
             Int32 carry8;
             Int32 carry9;
 
-            q = (19 * h9 + (((Int32)1) << 24)) >> 25;
+            q = (19 * h9 + (1 << 24)) >> 25;
             q = (h0 + q) >> 26;
             q = (h1 + q) >> 25;
             q = (h2 + q) >> 26;

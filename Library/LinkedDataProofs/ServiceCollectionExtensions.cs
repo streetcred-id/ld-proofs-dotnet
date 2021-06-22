@@ -2,10 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Newtonsoft.Json.Linq;
 using VDS.RDF.JsonLd;
-using LinkedDataProofs;
 using W3C.CCG.SecurityVocabulary;
 
 namespace Microsoft.Extensions.DependencyInjection

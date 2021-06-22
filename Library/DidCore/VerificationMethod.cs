@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Security.Cryptography;
-using System.Threading.Tasks;
 
 namespace W3C.CCG.DidCore
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Chaos.NaCl.Internal.Ed25519Ref10
+﻿namespace Chaos.NaCl.Internal.Ed25519Ref10
 {
 	internal static partial class FieldOperations
 	{
@@ -171,9 +169,6 @@ namespace Chaos.NaCl.Internal.Ed25519Ref10
 			fe_mul(out result, ref t1, ref t0);
 
 			/* qhasm: return */
-
-
-			return;
-		}
+        }
 	}
 }

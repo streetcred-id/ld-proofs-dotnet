@@ -1,7 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using W3C.CCG.DidCore;
 
 namespace W3C.CCG.DidCore
 {

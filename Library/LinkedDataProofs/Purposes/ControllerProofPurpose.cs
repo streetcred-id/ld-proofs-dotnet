@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using VDS.RDF.JsonLd;
-using W3C.CCG.DidCore;
 using W3C.CCG.SecurityVocabulary;
 
 namespace LinkedDataProofs.Purposes

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Chaos.NaCl.Internal;
 using Chaos.NaCl.Internal.Ed25519Ref10;
 using Chaos.NaCl.Internal.Salsa;
@@ -25,8 +24,7 @@ namespace Chaos.NaCl
             return publicKey;
         }
 
-        static readonly byte[] _basePoint = new byte[32]
-		{
+        static readonly byte[] _basePoint = {
 			9, 0, 0, 0, 0, 0, 0, 0,
 			0, 0, 0 ,0, 0, 0, 0, 0,
 			0, 0, 0 ,0, 0, 0, 0, 0,

@@ -1,7 +1,6 @@
 ﻿using Multiformats.Base;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using W3C.CCG.DidCore;
 
 namespace LinkedDataProofs.Suites

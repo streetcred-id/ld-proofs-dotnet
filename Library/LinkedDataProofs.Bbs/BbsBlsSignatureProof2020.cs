@@ -4,10 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using VDS.RDF;
 using VDS.RDF.JsonLd;
-using LinkedDataProofs;
-using LinkedDataProofs.Purposes;
 using W3C.CCG.SecurityVocabulary;
 using System.Text;
 

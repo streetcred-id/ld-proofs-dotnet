@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Chaos.NaCl.Internal.Ed25519Ref10
+﻿namespace Chaos.NaCl.Internal.Ed25519Ref10
 {
     internal static partial class LookupTables
     {
-        internal static readonly GroupElementPreComp[] Base2 = new GroupElementPreComp[]{
+        internal static readonly GroupElementPreComp[] Base2 = new[]{
             new GroupElementPreComp(
               new FieldElement( 25967493,-14356035,29566456,3660896,-12694345,4014787,27544626,-11754271,-6079156,2047605 ),
             new FieldElement( -12545711,934262,-2722910,3049990,-727428,9406986,12720692,5043384,19500929,-15469378 ),

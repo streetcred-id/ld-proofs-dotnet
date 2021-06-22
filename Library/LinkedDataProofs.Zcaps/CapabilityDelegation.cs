@@ -1,6 +1,4 @@
-﻿using System;
-using Newtonsoft.Json.Linq;
-using LinkedDataProofs.Purposes;
+﻿using Newtonsoft.Json.Linq;
 using W3C.CCG.SecurityVocabulary;
 
 namespace W3C.CCG.AuthorizationCapabilities

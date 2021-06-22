@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json.Linq;
-using W3C.CCG.DidCore;
 
 namespace LinkedDataProofs.Purposes
 {
